@@ -901,7 +901,6 @@ ul {
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .modal-contact-group {
@@ -912,6 +911,7 @@ ul {
   margin-left: 40px;
   margin-bottom: 10px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .modal-contact-item {
@@ -920,27 +920,26 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
+  outline: transparent;
   padding-right: 5px;
   padding-left: 45px;
   color: var(--dark-grey-txt-cl);
-  outline: transparent;
 }
 
-.modal-contact-item:focus + svg {
+.modal-contact-item:focus {
   border-color: var(--accent-cl);
-  fill: var(--accent-cl);
 }
 
 .modal-contact-svg {
   position: absolute;
   left: 15px;
-  bottom: -3px;
+  transform: translateY(100%);
   fill: var(--dark-grey-txt-cl);
 }
 
-/* .modal-contact-svg:focus {
+.modal-contact-item:focus + .modal-contact-svg {
   fill: var(--accent-cl);
-} */
+}
 
 .modal-message {
   width: 448px;
