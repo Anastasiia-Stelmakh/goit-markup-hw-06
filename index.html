@@ -693,10 +693,61 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
-          <svg width="11" height="11">
+          <svg class="modal-close-svg" width="11" height="11">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
+
+        <div class="modal-form-group">
+          <strong class="modal-form-title"
+            >Оставьте свои данные, мы вам перезвоним</strong
+          >
+          <form class="modal-form" action="">
+            <label class="modal-contact-group">
+              <span class="modal-form-text">Имя</span>
+              <input class="modal-contact-item" type="text" name="user-name" />
+              <svg class="modal-contact-svg" width="12" height="12">
+                <use href="./images/icons.svg#icon-user-name"></use>
+              </svg>
+            </label>
+            <label class="modal-contact-group">
+              <span class="modal-form-text">Телефон</span>
+              <input class="modal-contact-item" type="text" name="user-phone" />
+              <svg class="modal-contact-svg" width="12" height="12">
+                <use href="./images/icons.svg#icon-telephone-contact"></use>
+              </svg>
+            </label>
+            <label class="modal-contact-group">
+              <span class="modal-form-text">Почта</span>
+              <input
+                class="modal-contact-item"
+                type="email"
+                name="user-email"
+              />
+              <svg class="modal-contact-svg" width="12" height="12">
+                <use href="./images/icons.svg#icon-email-contact"></use>
+              </svg>
+            </label>
+            <label class="modal-contact-group modal-message">
+              <span class="modal-form-text">Комментарий</span>
+              <textarea
+                class="modal-message-item"
+                name="user-message"
+                placeholder="Введите текст"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <label class="modal-checkbox">
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a></span
+              >
+              <input type="checkbox" name="user-agreement" />
+            </label>
+            <button class="modal-form-button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
