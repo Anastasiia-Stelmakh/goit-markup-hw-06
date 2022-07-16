@@ -924,6 +924,10 @@ ul {
   padding-right: 5px;
   padding-left: 45px;
   color: var(--dark-grey-txt-cl);
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-contact-item:focus {
@@ -935,6 +939,10 @@ ul {
   left: 15px;
   transform: translateY(100%);
   fill: var(--dark-grey-txt-cl);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-contact-item:focus + .modal-contact-svg {
