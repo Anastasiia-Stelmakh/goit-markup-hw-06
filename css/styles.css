@@ -837,6 +837,10 @@ ul {
   line-height: 1.71;
   font-family: inherit;
   font-size: 18px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input-field::placeholder {
